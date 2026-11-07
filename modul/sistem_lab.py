@@ -136,6 +136,7 @@ class SistemLaboratorium:
             self.daftar_mahasiswa[nim] = Mahasiswa(nim, nama, no_hp)
             print("Mahasiswa berhasil ditambahkan.")
             self.catat_log(f"Mahasiswa {nim} ({nama}) ditambahkan")
+            self.simpan_data()
         else:
             print("Gagal! NIM sudah terdaftar.")
 
@@ -145,6 +146,7 @@ class SistemLaboratorium:
             self.daftar_mahasiswa[nim].no_hp = no_hp_baru
             print("Data mahasiswa berhasil diperbarui.")
             self.catat_log(f"Data mahasiswa {nim} diperbarui")
+            self.simpan_data()
         else:
             print("Mahasiswa tidak ditemukan.")
 
@@ -156,6 +158,7 @@ class SistemLaboratorium:
                 del self.daftar_mahasiswa[nim]
                 print("Mahasiswa berhasil dihapus.")
                 self.catat_log(f"Mahasiswa {nim} dihapus")
+                self.simpan_data()
         else:
             print("Mahasiswa tidak ditemukan.")
 
