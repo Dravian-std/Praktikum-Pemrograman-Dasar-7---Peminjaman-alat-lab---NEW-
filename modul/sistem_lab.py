@@ -285,6 +285,7 @@ class SistemLaboratorium:
         print(f"Transaksi {id_trx} berhasil dibuat untuk {mhs.nama}.")
         print(f"Batas pengembalian: {transaksi.batas_waktu}")
         self.catat_log(f"Transaksi {id_trx} dibuat oleh {nim}, {len(alat_dipinjam)} alat dipinjam")
+        self.simpan_data()
 
     def tampilkan_transaksi(self):
         print("--- Daftar Semua Transaksi ---")
@@ -313,9 +314,10 @@ class SistemLaboratorium:
         print(f"Status transaksi: {trx.status_transaksi}")
         self.catat_log(f"Alat {kode_alat} dikembalikan pada {trx.id_transaksi} (kondisi: {kondisi_baru}), status: {trx.status_transaksi}")
 
-        from datetime import date
         if date.today() > trx.batas_waktu:
             print(f"Catatan: pengembalian melewati batas waktu ({trx.batas_waktu}).")
+
+        self.simpan_data()
 
     def riwayat_peminjaman(self, nim):
         print(f"--- Riwayat Peminjaman NIM {nim} ---")
