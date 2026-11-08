@@ -4,9 +4,9 @@ class TransaksiPeminjaman:
     def __init__(self, id_transaksi, mahasiswa, daftar_alat, daftar_dikembalikan=None, tgl_peminjaman=None, batas_waktu=None, status_transaksi="dipinjam"):
         self.id_transaksi = id_transaksi
         self.mahasiswa = mahasiswa
-        self.daftar_alat_dipinjam = daftar_alat  # List dinamis
+        self.daftar_alat_dipinjam = daftar_alat  #List dinamis
         self.daftar_alat_dikembalikan = daftar_dikembalikan if daftar_dikembalikan is not None else []
-        # Penanganan konversi string tanggal CSV ke objek date
+        #Penanganan konversi string tanggal CSV ke objek date
         if isinstance(tgl_peminjaman, str):
             self.tgl_peminjaman = datetime.strptime(tgl_peminjaman, "%Y-%m-%d").date()
         elif isinstance(tgl_peminjaman, date):
@@ -40,7 +40,7 @@ class TransaksiPeminjaman:
         return False
 
     def update_status(self):
-        # Aturan 4: Pengembalian sebagian
+        #Aturan 4: Pengembalian sebagian
         if len(self.daftar_alat_dikembalikan) == len(self.daftar_alat_dipinjam):
             self.status_transaksi = "selesai"
             self.mahasiswa.kurangi_transaksi()
