@@ -1,0 +1,5 @@
+kode_alat,nama_alat,kategori,kondisi,status_tersedia
+A01,Kamera DSLR,Multimedia,baik,True
+A02,Tripod,Multimedia,baik,True
+A03,Kabel LAN,Jaringan,baik,False
+J12,Mikrotik,Jaringan,baik,True

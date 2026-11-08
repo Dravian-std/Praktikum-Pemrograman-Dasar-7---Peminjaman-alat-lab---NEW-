@@ -1,0 +1,2 @@
+id_transaksi,nim_peminjam,kode_alat_dipinjam,kode_alat_dikembalikan,tgl_peminjaman,batas_waktu,status_transaksi
+TRX001,K3525048,J12;A03,J12,2026-11-08,2026-11-15,sebagian dikembalikan
