@@ -1,0 +1,9 @@
+[2026-11-08 17:22:25] Mahasiswa M01 (Budi) ditambahkan
+[2026-11-08 17:22:25] Mahasiswa M02 (Siti) ditambahkan
+[2026-11-08 17:22:25] Alat A01 (Kamera DSLR) ditambahkan
+[2026-11-08 17:22:25] Alat A02 (Tripod) ditambahkan
+[2026-11-08 17:22:25] Alat A03 (Kabel LAN) ditambahkan
+[2026-11-08 17:22:43] Mahasiswa K3525048 (Amel) ditambahkan
+[2026-11-08 17:23:41] Alat J12 (Mikrotik) ditambahkan
+[2026-11-08 17:26:29] Transaksi TRX001 dibuat oleh K3525048, 2 alat dipinjam
+[2026-11-08 17:27:46] Alat J12 dikembalikan pada TRX001 (kondisi: baik), status: sebagian dikembalikan
